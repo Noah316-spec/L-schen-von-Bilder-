@@ -1,0 +1,10 @@
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\obj\Debug\clear_pictures.csproj.AssemblyReference.cache
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\obj\Debug\clear_pictures.Form1.resources
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\obj\Debug\clear_pictures.Properties.Resources.resources
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\obj\Debug\clear_pictures.csproj.GenerateResource.cache
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\obj\Debug\clear_pictures.csproj.CoreCompileInputs.cache
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\bin\Debug\Löschen von Bildern.exe.config
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\bin\Debug\Löschen von Bildern.exe
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\bin\Debug\Löschen von Bildern.pdb
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\obj\Debug\Löschen von Bildern.exe
+C:\Users\nassnode\source\repos\clear_pictures\clear_pictures\obj\Debug\Löschen von Bildern.pdb

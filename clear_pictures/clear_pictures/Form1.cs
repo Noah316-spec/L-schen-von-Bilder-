@@ -16,7 +16,7 @@ namespace clear_pictures
     {
        
 
-        bool i = false;
+        bool i = false; // Variable für löschen bzw. verschieben 
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +24,7 @@ namespace clear_pictures
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboBox1.SelectedIndex = 0;
+            comboBox1.SelectedIndex = 0; // Standard wert
 
         }
 
@@ -32,14 +32,15 @@ namespace clear_pictures
         public void OrganizeFiles(int comboBoxIndex, bool shouldDelete)
         {
             
-                string user = Environment.UserName;
-                string path = $@"C:\\Users\\{user}\\Downloads";
-                string pathPng = $@"C:\\Users\\{user}\\Dokumente\\PNG-Ordner";
-                string pathJpg = $@"C:\\Users\\{user}\\Dokumente\\JPG-Ordner";
-                string pathMp4 = $@"C:\\Users\\{user}\\Dokumente\\MP4-Ordner";
+                string user = Environment.UserName; // User herausfinden 
+                string path = $@"C:\\Users\\{user}\\Downloads";// path downloads
+                string pathPng = $@"C:\\Users\\{user}\\Dokumente\\PNG-Ordner";// path png
+                string pathJpg = $@"C:\\Users\\{user}\\Dokumente\\JPG-Ordner";// path jpg
+                string pathMp4 = $@"C:\\Users\\{user}\\Dokumente\\MP4-Ordner";// path mp4
 
-                string[] extensions = { ".jpg", ".png", ".mp4" };
-                string selectedExtension = extensions[comboBoxIndex];
+                // Index int combobox == arrays inhalt 
+                string[] extensions = { ".jpg", ".png", ".mp4" }; 
+                string selectedExtension = extensions[comboBoxIndex]; 
 
                 var imageFiles = Directory.GetFiles(path, "*.*", SearchOption.AllDirectories)
                     .Where(s => s.EndsWith(selectedExtension));
@@ -72,7 +73,8 @@ namespace clear_pictures
                         File.Move(imageFile, destinationPath);
                     }
                 }
-                else
+                // löschen des inhaltes des Ordners
+                else 
                 {
                     if (comboBoxIndex == 0)
                     {
@@ -93,11 +95,11 @@ namespace clear_pictures
 
                         foreach (FileInfo file in di.GetFiles())
                         {
-                            file.Delete();
+                            file.Delete(); 
                         }
                         foreach (DirectoryInfo dir in di.GetDirectories())
                         {
-                            dir.Delete(true);
+                            dir.Delete(true); 
                         }
                     }
                 }
